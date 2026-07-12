@@ -244,6 +244,40 @@ nav{
 
 .hero p{
     font-size:18px;
+   .subtitulo{
+    color:#bfbfbf;
+    margin-bottom:40px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.foto{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
+    transition:.4s;
+}
+
+.foto img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.foto:hover{
+    transform:translateY(-10px);
+}
+
+.foto:hover img{
+    transform:scale(1.08);
+}
 }
 
 }
